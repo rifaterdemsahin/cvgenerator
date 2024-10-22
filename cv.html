@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rifat Erdem Sahin - CV</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <style>
+        /* Include the contents of src/App.css here */
+        body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          color: #333;
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 20px;
+        }
+
+        header {
+          text-align: center;
+          margin-bottom: 30px;
+        }
+
+        h1 {
+          color: #2c3e50;
+          margin-bottom: 5px;
+        }
+
+        h2 {
+          color: #34495e;
+          border-bottom: 2px solid #34495e;
+          padding-bottom: 5px;
+          margin-top: 30px;
+        }
+
+        h3 {
+          color: #2980b9;
+        }
+
+        .contact-info {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+
+        .contact-info p {
+          margin: 5px 15px;
+        }
+
+        .job {
+          margin-bottom: 30px;
+        }
+
+        .job-duration, .job-location {
+          font-style: italic;
+          color: #7f8c8d;
+        }
+
+        .job-description {
+          margin-top: 10px;
+          text-align: justify;
+        }
+
+        .job-skills {
+          margin-top: 10px;
+        }
+
+        .skills .skill-category {
+          margin-bottom: 20px;
+        }
+
+        .skills ul {
+          list-style-type: none;
+          padding-left: 0;
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        .skills li {
+          background-color: #ecf0f1;
+          padding: 5px 10px;
+          margin: 5px;
+          border-radius: 3px;
+        }
+
+        a {
+          color: #3498db;
+          text-decoration: none;
+        }
+
+        a:hover {
+          text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        // Header component
+        function Header() {
+            const contactInfo = {
+                contactInfo: {
+                    yourProfile: {
+                        linkedin: "linkedin.com/in/rifaterdemsahin"
+                    },
+                    email: "info@pexabo.com",
+                    phone: [{ number: "+447848024173", type: "Work" }],
+                    address: "Cambridge, UK."
+                }
+            };
+
+            const { contactInfo: info } = contactInfo;
+
+            return (
+                <header>
+                    <h1>Rifat Erdem Sahin</h1>
+                    <p>DevOps Engineer</p>
+                    <div className="contact-info">
+                        <p>Email: {info.email}</p>
+                        <p>Phone: {info.phone[0].number}</p>
+                        <p>Location: {info.address}</p>
+                        <p>LinkedIn: <a href={`https://${info.yourProfile.linkedin}`} target="_blank" rel="noopener noreferrer">{info.yourProfile.linkedin}</a></p>
+                    </div>
+                </header>
+            );
+        }
+
+        // Experience component
+        function Experience({ experiences }) {
+            return (
+                <section className="experience">
+                    <h2>Professional Experience</h2>
+                    {experiences.map((job, index) => (
+                        <div key={index} className="job">
+                            <h3>{job.title} at {job.company}</h3>
+                            <p className="job-duration">{job.startDate} - {job.endDate} ({job.duration})</p>
+                            <p className="job-location">{job.location}</p>
+                            <p className="job-description">{job.description}</p>
+                            <div className="job-skills">
+                                <strong>Skills:</strong> {job.skills.join(', ')}
+                            </div>
+                        </div>
+                    ))}
+                </section>
+            );
+        }
+
+        // Skills component
+        function Skills({ skills }) {
+            return (
+                <section className="skills">
+                    <h2>Skills</h2>
+                    {Object.entries(skills).map(([category, skillList]) => (
+                        <div key={category} className="skill-category">
+                            <h3>{category.replace(/([A-Z])/g, ' $1').trim()}</h3>
+                            <ul>
+                                {skillList.map((skill, index) => (
+                                    <li key={index}>{skill}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    ))}
+                </section>
+            );
+        }
+
+        // App component
+        function App() {
+            const experiencesData = {
+                experiences: [
+                    // Include the experiences data from experinces.json here
+                    // For brevity, I'm including only one example
+                    {
+                        "company": "DevOps Engineering",
+                        "title": "DevOps Engineer",
+                        "employmentType": "Contract",
+                        "startDate": "2017",
+                        "endDate": "Present",
+                        "duration": "7 yrs 10 mos",
+                        "location": "London Area, United Kingdom · Remote",
+                        "description": "🚀 Continuous Delivery (CD) is a game-changing strategy in software development, empowering organizations to deliver new features to users as swiftly and efficiently as possible...",
+                        "skills": [
+                            "Terraform",
+                            "Automation",
+                            "Nginx",
+                            "Python (Programming Language)",
+                            "Iac",
+                            "DevOps",
+                            "Site Reliability Engineering"
+                        ]
+                    }
+                    // Add more experiences here
+                ]
+            };
+
+            const skillsData = {
+                skills: {
+                    // Include the skills data from skill.json here
+                    "cloudPlatforms": [
+                        "AWS",
+                        "Microsoft Azure",
+                        "Multi-Cloud"
+                    ],
+                    "containerization": [
+                        "Docker",
+                        "Kubernetes",
+                        "Docker Compose",
+                        "Rancher",
+                        "ECS/EKS",
+                        "Container Registry",
+                        "LXD"
+                    ],
+                    // Add more skill categories here
+                }
+            };
+
+            return (
+                <div className="App">
+                    <Header />
+                    <main>
+                        <Experience experiences={experiencesData.experiences} />
+                        <Skills skills={skillsData.skills} />
+                    </main>
+                </div>
+            );
+        }
+
+        ReactDOM.render(
+            <React.StrictMode>
+                <App />
+            </React.StrictMode>,
+            document.getElementById('root')
+        );
+    </script>
+</body>
+</html>
+
