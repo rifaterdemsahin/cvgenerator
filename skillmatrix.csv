@@ -68,7 +68,8 @@ Cloud Shell,"Utilized Azure Cloud Shell and Google Cloud Platform (GCP) Cloud Sh
 
 
 
-",,,https://github.com/rifaterdemsahin/automation-with-ansible/blob/main/output.md,,,d6eb26a72a084b6c97d227449da2c721
+
+",,,https://github.com/rifaterdemsahin/automation-with-ansible/blob/main/output.md,,,d6eb26a72a084b6c97d227449da2c721
 CloudFormation,Infrastructure as code implementation in the cloud.,2,DevOps,No,,"August 17, 2023 16:13",9e0d6f9d32d54a2baad556aea38ab710
 CloudFront,Implemented multiple CDN systems and created workflows around validations and https/certificate management,5,,No,,"July 4, 2023 19:29",90b8ad96482f4c11b1e57181c9041212
 Custom Resource Definitions,Implement CRD for Openshift clusters that serviced Critical  National Infrastructure with multiple clusters that are managed with site reliability engineering principles,2,DevOps,https://github.com/rifaterdemsahin/openshift-resources/blob/main/_output.md,,,
@@ -149,6 +150,7 @@ Firewall,"Designed and implemented an auto mode VPC network within Google Cloud,
 Functions,"Expertly utilized Azure Functions, AWS Lambda, and GCP Functions to orchestrate CI/CD workflows, integrating state machines for efficient deployment processes. Specialized in leveraging serverless architectures for automating and coordinating complex deployment tasks, ensuring seamless, scalable, and secure application releases. Demonstrated proficiency in developing and managing delivery on demand and streamline cloud-based orchestration systems.",6,Cloud Computing,No,7,"July 27, 2023 22:09",b2538cf268314ee393bd66720372d71f
 Games,I have build and deployed games to google play and appstore,2,,No,,"July 4, 2023 19:24",74c377253eed4c5383e116abaaff8c37
 Grafana,Build monitoing dashboards for critical national infrastructure based on ARO architecture using installed,,,,,,
+GoLang,implement ArgoCD in openshift environments,2,Cloud Computing,No,5,"July 27, 2023 21:20",97fcfd08510842c7a36b91ed3edc01d9
 GPU ,multi gpu implementations and regular user of gpuz to determine the performance of unity3d applications and video production environments render performance,,,,,,
 GCP,"I've been instrumental in revolutionizing our development lifecycle through the implementation of Continuous Integration and Continuous Deployment (CI/CD) workflows based on Google Cloud Platform (GCP). Leveraging my expertise in cloud computing, particularly with GCP services, I spearheaded the adoption of Cloud Build to automate our deployment processes.",2,Cloud Computing,No,5,"July 27, 2023 21:20",87fcfd08510842c7a36b91ed3edc01d9
 GCP API,"Proficient in GCP API, OAuth, and Service Accounts, adeptly integrating them with Google Drive and Gmail for seamless data management and communication workflows. Skilled in developing custom solutions and automating processes, I leverage Google Cloud Platform's robust infrastructure to optimize efficiency and enhance collaboration. With a focus on security and reliability, I enable organizations to leverage the full potential of GCP services for streamlined operations and improved productivity.",2,Cloud Computing,No,5,,3d45e2e37216468c8ca29ba1867fb979
@@ -201,7 +203,8 @@ Kubectl,"I designed Infrastructure as Code (IaC) to deploy Kubernetes on OpenShi
 
 
 
-",3,DevOps,No,8,,
+
+",3,DevOps,No,8,,
 Lambda,implemented in more than 4 projects including TransVR for Lockeed martin VR automation for Oculus Quest,4,Cloud Computing,No,,"July 27, 2023 22:10",ac5918b5b1fb48afa810a55e6b21f5c2
 LAMP,"Deployed Bitnami LAMP Stack on Google Cloud Platform (GCP) as an Associate Engineer, supporting the DevOps team for the Photon project. Managed server configurations, ensuring seamless deployment and optimal performance. Enhanced operational efficiency and project delivery by leveraging Bitnami's pre-packaged applications, streamlining the development process for the engineering team. Demonstrated expertise in cloud infrastructure, automation tools, and cross-functional collaboration, contributing to the successful execution of the Photon contract.
 
@@ -412,7 +415,8 @@ VPC ,"Expert in Google Cloud Virtual Private Cloud (VPC), enabling networking fo
 
 
 
-",4,Cloud Computing,No,,,6f220e080979472c9147ae5974ee06f8
+
+",4,Cloud Computing,No,,,6f220e080979472c9147ae5974ee06f8
 VR,Utilized VR for defense systems training program backend orchestration and built pipelines on AWS for deployment to Oculus Quest,6,,No,,"July 4, 2023 19:24",a6eca963e64d419a89cae267a5615285
 VSS,Conducted multi-year enterprise source controls transfer to Git,2,DevOps,No,,,dc5ecde45ad54d0a84c35c887bc5cfaa
 VSTS,"Delivered over 5 projects using Visual Studio Online, employing scrum and kanban methodologies, and creating burndown charts",5,,No,,"July 4, 2023 19:29",26af2343e51544f0815be85d595a3bab
