@@ -18,7 +18,9 @@
 - [versions/v15/erdem-sahin-cv_summary_2024v14-1.docx](versions/v15/erdem-sahin-cv_summary_2024v14-1.docx)
 - [versions/v15/erdem-sahin-cv_summaryfullstack_2024v2-1.docx](versions/v15/erdem-sahin-cv_summaryfullstack_2024v2-1.docx)
 
+### Published
+- https://rifaterdemsahin.github.io/cv/cv.html
 
-# Update the Repo
+### Update the Repo
 
 git pull; git add . && git commit -m "Refine task priorities in kanban board" && git push;clear.exe 
